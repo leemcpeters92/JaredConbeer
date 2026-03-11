@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Custom Woodwork & Fine Cabinetry</title>
+  <meta name="description" content="High-end custom cabinetry, architectural millwork, and fine furniture." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <span class="brand-name">Your Woodworks</span>
+          <span class="brand-tag">Custom Cabinetry & Millwork</span>
+        </span>
+      </a>
+
+      <!-- CSS-only mobile menu toggle -->
+      <input class="nav-check" type="checkbox" id="nav-check" aria-label="Open menu" />
+      <label class="nav-toggle" for="nav-check">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="nav-toggle-lines" aria-hidden="true"></span>
+      </label>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+
+        <!-- Dropdown (Delnero-inspired) -->
+        <div class="nav-drop">
+          <button class="nav-drop-btn" type="button" aria-haspopup="true">
+            Portfolio
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="nav-drop-menu" role="menu" aria-label="Portfolio categories">
+            <a role="menuitem" href="#portfolio-kitchens">Kitchens & Cabinets</a>
+            <a role="menuitem" href="#portfolio-baths">Baths & Vanities</a>
+            <a role="menuitem" href="#portfolio-builtins">Built-ins</a>
+            <a role="menuitem" href="#portfolio-furniture">Furniture</a>
+            <a role="menuitem" href="#portfolio-architect">Architect Collections</a>
+            <a role="menuitem" href="#portfolio-home">Exquisite Home Projects</a>
+          </div>
+        </div>
+
+        <a href="#services">Services</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero (Meunier-inspired slideshow) -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero-slides" aria-hidden="true">
+        <div class="hero-slide s1"></div>
+        <div class="hero-slide s2"></div>
+        <div class="hero-slide s3"></div>
+        <div class="hero-slide s4"></div>
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="container hero-content">
+        <p class="eyebrow">Providing high-end custom cabinetry and architectural millwork</p>
+        <h1>Craftsmanship, engineered with restraint.</h1>
+        <p class="lead">
+          We design, build, and install cabinetry, millwork, windows & doors, and heirloom furniture
+          for new builds, remodels, and historic renovations.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Request a Quote</a>
+          <a class="btn btn-ghost" href="#portfolio">View Portfolio</a>
+        </div>
+
+        <div class="hero-quick">
+          <a class="pill" href="#services">Cabinetry</a>
+          <a class="pill" href="#services">Millwork</a>
+          <a class="pill" href="#services">Windows & Doors</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container two-col">
+        <div>
+          <h2>About</h2>
+          <p>
+            We build high-end custom work with an emphasis on precision, proportion, and longevity.
+            Our process is collaborative and detail-forward: we plan thoroughly, build cleanly, and
+            install with care.
+          </p>
+
+          <div class="callout">
+            <div class="callout-title">How we work</div>
+            <ul class="checklist">
+              <li>Clear scope and design guidance up front</li>
+              <li>Shop-built components with consistent fit & finish</li>
+              <li>Installation managed like a finish craft, not a rush job</li>
+            </ul>
+          </div>
+        </div>
+
+        <aside class="panel" aria-label="At-a-glance">
+          <div class="panel-media" role="img" aria-label="Close-up of cabinet detail"></div>
+          <div class="panel-caption">
+            <span>Solid materials</span>
+            <span class="dot" aria-hidden="true"></span>
+            <span>Clean joinery</span>
+            <span class="dot" aria-hidden="true"></span>
+            <span>Hand-finished</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Portfolio Overview Tiles (Delnero-inspired category tiles) -->
+    <section class="section section-alt" id="portfolio">
+      <div class="container">
+        <div class="section-head">
+          <h2>Portfolio</h2>
+          <p class="muted">
+            Browse by category. Replace the placeholder images with your project photography.
+          </p>
+        </div>
+
+        <div class="category-grid" aria-label="Portfolio categories">
+          <a class="category-tile t-kitchens" href="#portfolio-kitchens">
+            <span class="category-label">Kitchens & Cabinets</span>
+          </a>
+          <a class="category-tile t-baths" href="#portfolio-baths">
+            <span class="category-label">Baths & Vanities</span>
+          </a>
+          <a class="category-tile t-builtins" href="#portfolio-builtins">
+            <span class="category-label">Built-ins</span>
+          </a>
+          <a class="category-tile t-furniture" href="#portfolio-furniture">
+            <span class="category-label">Furniture</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- “Why choose us” (Delnero-inspired narrative + features) -->
+    <section class="section" id="why">
+      <div class="container">
+        <div class="section-head">
+          <h2>Why choose us</h2>
+          <p class="muted">
+            Meticulous attention to detail, thoughtful materials, and a process built for discerning clients.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature">
+            <h3>Quality construction</h3>
+            <p>
+              We validate structural integrity early, then select wood species, hardware, and finishes intentionally.
+              Every build receives the time needed to get the details right.
+            </p>
+          </article>
+
+          <article class="feature">
+            <h3>Signature details</h3>
+            <p>
+              Brass inlays, hand-forged elements, hidden compartments, floating tops—features are integrated
+              to look inevitable, not added-on.
+            </p>
+          </article>
+
+          <article class="feature">
+            <h3>100% custom built</h3>
+            <p>
+              No “standard sizes” and fillers. We build to your dimensions so the work reads as seamless and
+              architectural.
+            </p>
+          </article>
+
+          <article class="feature">
+            <h3>Delivery & installation</h3>
+            <p>
+              We deliver and install with finish-level care. If you need crating/shipping options, we can support that.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services (Meunier-inspired headings + Delnero-like detail) -->
+    <section class="section section-alt" id="services">
+      <div class="container">
+        <div class="section-head">
+          <h2>Services</h2>
+          <p class="muted">Cabinetry, millwork, and specialty builds—designed, built, and installed.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-media m1" role="img" aria-label="Cabinetry"></div>
+            <div class="card-body">
+              <h3>Cabinetry</h3>
+              <p>Luxury kitchens, built-ins, storage systems, and architectural casework.</p>
+              <a class="link" href="#contact">Discuss cabinetry</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media m2" role="img" aria-label="Millwork"></div>
+            <div class="card-body">
+              <h3>Millwork</h3>
+              <p>Moulding, trim, fireplace surrounds, stair parts, and restoration detail work.</p>
+              <a class="link" href="#contact">Plan millwork</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media m3" role="img" aria-label="Windows and doors"></div>
+            <div class="card-body">
+              <h3>Windows & Doors</h3>
+              <p>Custom doors, jambs, casings, and period-appropriate solutions.</p>
+              <a class="link" href="#contact">Talk openings</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media m4" role="img" aria-label="Furniture"></div>
+            <div class="card-body">
+              <h3>Furniture</h3>
+              <p>Heirloom pieces built for your space—proportioned, finished, and durable.</p>
+              <a class="link" href="#contact">Commission a piece</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Sections (anchors for dropdown items) -->
+    <section class="section" id="portfolio-kitchens">
+      <div class="container">
+        <div class="section-head">
+          <h2>Kitchens & Cabinets</h2>
+          <p class="muted">A gallery grid that can scale up as you add projects.</p>
+        </div>
+        <div class="gallery">
+          <a class="tile g1" href="#contact" aria-label="Kitchen project 1"></a>
+          <a class="tile g2" href="#contact" aria-label="Kitchen project 2"></a>
+          <a class="tile g3" href="#contact" aria-label="Kitchen project 3"></a>
+          <a class="tile g4" href="#contact" aria-label="Kitchen project 4"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="portfolio-baths">
+      <div class="container">
+        <div class="section-head">
+          <h2>Baths & Vanities</h2>
+          <p class="muted">Built for humidity, daily use, and clean lines.</p>
+        </div>
+        <div class="gallery gallery-3">
+          <a class="tile b1" href="#contact" aria-label="Bath project 1"></a>
+          <a class="tile b2" href="#contact" aria-label="Bath project 2"></a>
+          <a class="tile b3" href="#contact" aria-label="Bath project 3"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio-builtins">
+      <div class="container">
+        <div class="section-head">
+          <h2>Built-ins</h2>
+          <p class="muted">Libraries, bars, mudrooms, media walls, and integrated storage.</p>
+        </div>
+        <div class="gallery">
+          <a class="tile bi1" href="#contact" aria-label="Built-in project 1"></a>
+          <a class="tile bi2" href="#contact" aria-label="Built-in project 2"></a>
+          <a class="tile bi3" href="#contact" aria-label="Built-in project 3"></a>
+          <a class="tile bi4" href="#contact" aria-label="Built-in project 4"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="portfolio-furniture">
+      <div class="container">
+        <div class="section-head">
+          <h2>Furniture</h2>
+          <p class="muted">Tables, credenzas, built-to-order pieces, and special commissions.</p>
+        </div>
+        <div class="gallery gallery-3">
+          <a class="tile f1" href="#contact" aria-label="Furniture project 1"></a>
+          <a class="tile f2" href="#contact" aria-label="Furniture project 2"></a>
+          <a class="tile f3" href="#contact" aria-label="Furniture project 3"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio-architect">
+      <div class="container">
+        <div class="section-head">
+          <h2>Architect Collections</h2>
+          <p class="muted">Collaborative work with architects and designers. Add case studies here.</p>
+        </div>
+        <div class="case-grid">
+          <article class="case">
+            <h3>Case Study Title</h3>
+            <p>Brief overview: scope, materials, and results. Add 2–3 supporting images if desired.</p>
+            <a class="link" href="#contact">Start a collaboration</a>
+          </article>
+          <article class="case">
+            <h3>Case Study Title</h3>
+            <p>Brief overview: constraints, process, and finish decisions. Keep it concise.</p>
+            <a class="link" href="#contact">Discuss details</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="portfolio-home">
+      <div class="container">
+        <div class="section-head">
+          <h2>Exquisite Home Projects</h2>
+          <p class="muted">Whole-home cabinetry and millwork packages.</p>
+        </div>
+        <div class="gallery">
+          <a class="tile h1" href="#contact" aria-label="Home project 1"></a>
+          <a class="tile h2" href="#contact" aria-label="Home project 2"></a>
+          <a class="tile h3" href="#contact" aria-label="Home project 3"></a>
+          <a class="tile h4" href="#contact" aria-label="Home project 4"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container contact">
+        <div>
+          <h2>Contact</h2>
+          <p class="muted">
+            Tell us what you’re building, your timeline, and include photos/dimensions if available.
+          </p>
+
+          <dl class="contact-list">
+            <div>
+              <dt>Location</dt>
+              <dd>(your service area)</dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:you@example.com">you@example.com</a></dd>
+            </div>
+            <div>
+              <dt>Phone</dt>
+              <dd><a href="tel:+15185551234">(518) 555-1234</a></dd>
+            </div>
+          </dl>
+
+          
+        </div>
+
+       <!-- <form class="form" action="#" method="post">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" autocomplete="name" required />
+          </label>
+
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" autocomplete="email" required />
+          </label>
+
+          <label>
+            <span>Project Type</span>
+            <select name="type" required>
+              <option value="" disabled selected>Select one</option>
+              <option>Kitchen</option>
+              <option>Cabinetry / Built-ins</option>
+              <option>Millwork</option>
+              <option>Windows & Doors</option>
+              <option>Furniture</option>
+              <option>Other</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" required placeholder="Scope, style, timeline, and any constraints..."></textarea>
+          </label>
+
+          <button class="btn btn-primary" type="submit">Send Inquiry</button>
+          <p class="fineprint">Replace placeholders and connect the form when you’re ready.</p>
+        </form>-->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Your Woodworks. All rights reserved.</p>
+      <a class="back-top" href="#top">Back to top</a>
+    </div>
+
+    <!-- tiny inline script just for year (optional) -->
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>

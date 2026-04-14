@@ -90,6 +90,13 @@ a { text-decoration: none; color: inherit; }
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 50px;
+  justify-items: center;
+  text-align: center;
+}
+.contact-info,
+.contact-form {
+  width: 100%;
+  max-width: 520px;
 }
 .contact-list { list-style: none; padding: 0; }
 .contact-list li { margin-bottom: 10px; }

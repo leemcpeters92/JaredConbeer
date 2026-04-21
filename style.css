@@ -126,3 +126,61 @@ input, textarea {
   font-size: 0.8rem;
   opacity: 0.7;
 }
+
+/* --- Mobile Navigation & Layout Updates --- */
+
+/* Hide the hamburger icon by default (on desktop) */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Mobile Media Query */
+@media (max-width: 768px) {
+  /* Show hamburger menu */
+  .hamburger {
+    display: block;
+  }
+
+  /* Allow the nav links to drop below the header */
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  /* Hide links by default on mobile, stack them vertically */
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  /* The JS toggles this class to show the menu */
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Space out the mobile links */
+  .nav-links a {
+    margin: 15px 0;
+    display: block;
+  }
+
+  /* Center the wrapped items in Services and Gallery */
+  .grid-4, .photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Give the cards a flexible width so they stay centered without stretching too far */
+  .card, .photo-item {
+    width: 100%;
+    max-width: 350px; 
+  }
+}

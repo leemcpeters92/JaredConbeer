@@ -141,26 +141,39 @@ input, textarea {
 
 /* Mobile Media Query */
 @media (max-width: 768px) {
-  /* Show hamburger menu */
+  .nav {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Make the brand name slightly smaller and flexible */
+  .brand {
+    font-size: 1.1rem; /* Reduced from 1.5rem to fit on small screens */
+    flex: 1;           /* Allows the name to take the available space */
+    margin-right: 10px;
+    display: flex;     /* Keeps the logo and text aligned if you added a logo */
+    align-items: center;
+  }
+
+  /* Ensure the hamburger button doesn't shrink or move */
   .hamburger {
     display: block;
+    flex-shrink: 0;   /* Prevents the button from being squashed or pushed down */
+    order: 2;         /* Positions it after the brand */
   }
 
-  /* Allow the nav links to drop below the header */
-  .nav {
-    flex-wrap: wrap;
-  }
-
-  /* Hide links by default on mobile, stack them vertically */
+  /* Force the menu links to drop to a new line */
   .nav-links {
     display: none;
-    width: 100%;
+    width: 100%;      /* Takes up 100% width to force it to the next 'row' */
+    order: 3;         /* Positions the menu items below the brand/hamburger */
     flex-direction: column;
     text-align: center;
     padding-top: 1rem;
   }
 
-  /* The JS toggles this class to show the menu */
   .nav-links.active {
     display: flex;
   }
@@ -183,4 +196,16 @@ input, textarea {
     width: 100%;
     max-width: 350px; 
   }
+}
+
+/* Styling for the navbar brand and logo */
+.brand {
+  display: flex;
+  align-items: center; /* Vertically aligns logo and text */
+  gap: 15px;           /* Adds space between logo and text */
+}
+
+.nav-logo {
+  height: 40px;        /* Adjust this to fit your header height */
+  width: auto;
 }
